@@ -1,0 +1,4 @@
+interface:
+  display_name: "图片提示词量化解析"
+  short_description: "量化拆解参考图并生成带详细参数的可复制生图提示词与构图"
+  default_prompt: "使用 $image-prompt-craft 量化解析这张参考图，并生成带详细数值参数的完整生图提示词。"
