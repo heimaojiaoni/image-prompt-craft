@@ -4,7 +4,7 @@
 
 `image-prompt-craft` analyzes a supplied reference image, estimates visible composition and rendering details, and writes a fluent Chinese prompt with compact mathematical parameters woven directly into the description. It also supports controlled character replacement and style changes while preserving every unrequested visual attribute.
 
-**图像提示词学作**是一款用于 Codex 的图像解析 Skill：它根据参考图中的可见证据反推画面，并生成细节充分、带数学参数的中文生图提示词。参数会紧跟在对应的中文描述旁，不会把提示词写成杂乱的字段清单。
+**图片提示词量化解析**是一款用于 Codex 的图像解析 Skill：它根据参考图中的可见证据反推画面，并生成细节充分、带数学参数的中文生图提示词。参数会紧跟在对应的中文描述旁，不会把提示词写成杂乱的字段清单。
 
 ## What it does · 功能
 
@@ -25,10 +25,10 @@ To install from a clone on macOS or Linux:
 ```sh
 skills_dir="${CODEX_HOME:-$HOME/.codex}/skills"
 mkdir -p "$skills_dir"
-git clone https://github.com/<OWNER>/image-prompt-craft.git "$skills_dir/image-prompt-craft"
+git clone https://github.com/heimaojiaoni/image-prompt-craft.git "$skills_dir/image-prompt-craft"
 ```
 
-Replace `<OWNER>` with the GitHub account or organization that hosts this repository. You can also download the repository ZIP from GitHub and place its `image-prompt-craft` folder in the skills directory. Keep the folder name `image-prompt-craft`.
+You can also download the repository ZIP from GitHub and place its `image-prompt-craft` folder in the skills directory. Keep the folder name `image-prompt-craft`.
 
 To use it, invoke `$image-prompt-craft` with an attached reference image and describe whether you want a faithful prompt, a character replacement, or another specific edit.
 
